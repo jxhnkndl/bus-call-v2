@@ -52,6 +52,7 @@ const concertSchema = new Schema(
     },
     doors: {
       type: String,
+      required: true,
       trim: true
     },
     headliner: {
