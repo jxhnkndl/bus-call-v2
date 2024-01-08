@@ -7,7 +7,7 @@ const secret = process.env.SECRET;
 const expiration = process.env.EXPIRATION;
 
 // Authenticate user's web token
-const authMiddleware = (req) => {
+const authMiddleware = ({ req }) => {
   let token = req.body.token || req.headers.authorization;
 
   // Split authorization header into ["Bearer", "tokenValue"]
@@ -44,7 +44,7 @@ module.exports = {
   signToken,
   AuthenticationError: new GraphQLError('Failed to authenticate user', {
     extensions: {
-      code: 'UNAUTHENTICATED'
-    }
-  })
-}
+      code: 'UNAUTHENTICATED',
+    },
+  }),
+};
