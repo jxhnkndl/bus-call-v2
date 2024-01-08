@@ -1,5 +1,6 @@
 const typeDefs = `
   type User {
+    _id: ID!
     email: String!
     firstName: String!
     lastName: String!
@@ -10,6 +11,7 @@ const typeDefs = `
   }  
 
   type Artist {
+    _id: ID!
     name: String!
     concerts: [Concert]
     crew: [User]
@@ -58,7 +60,6 @@ const typeDefs = `
   }
 
   type Mutation {
-    login(email: String!, password: String!): Auth
     createUser(email: String!, password: String!, firstName: String!, lastName: String!, bio: String, profilePhoto: String, roles: [String]): Auth
   }
 `;
