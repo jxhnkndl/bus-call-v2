@@ -12,6 +12,11 @@ const concertSchema = new Schema(
       required: true,
       trim: true
     },
+    address: {
+      type: String,
+      required: true,
+      trim: true
+    },
     city: {
       type: String,
       required: true,
