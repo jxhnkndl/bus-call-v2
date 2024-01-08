@@ -1,0 +1,247 @@
+[
+  {
+    "date": "March 1, 2024",
+    "venue": "The Norva",
+    "address": "123 Main Street",
+    "city": "Norfolk",
+    "state": "VA",
+    "country": "USA",
+    "doors": "7:00 PM",
+    "headliner": "The Bigger Lights",
+    "support": "littleDEATH, honeylip",
+    "parking": true,
+    "soundcheck": true,
+    "lounge": true,
+    "catering": false,
+    "wifi": true,
+    "showers": true,
+    "rider": true,
+    "hotel": false,
+    "daysheet": [
+      {
+        "timeslot": "2:30 PM",
+        "event": "Load In"
+      },
+      {
+        "timeslot": "4:30 PM",
+        "event": "Headliner soundcheck"
+      },
+      {
+        "timeslot": "5:30 PM",
+        "event": "Opener soundcheck"
+      },
+      {
+        "timeslot": "7:00 PM",
+        "event": "Doors"
+      },
+      {
+        "timeslot": "7:30-8:15 PM",
+        "event": "honeylip"
+      },
+      {
+        "timeslot": "8:35-9:25 PM",
+        "event": "littleDEATH"
+      },
+      {
+        "timeslot": "9:45-11:00 PM",
+        "event": "The Bigger Lights"
+      }
+    ]
+  },
+  {
+    "date": "March 2, 2024",
+    "venue": "The National",
+    "address": "123 Broad Street",
+    "city": "Richmond",
+    "state": "VA",
+    "country": "USA",
+    "doors": "7:30 PM",
+    "headliner": "The Bigger Lights",
+    "support": "littleDEATH, honeylip",
+    "parking": true,
+    "soundcheck": true,
+    "lounge": true,
+    "catering": true,
+    "wifi": true,
+    "showers": false,
+    "rider": true,
+    "hotel": false,
+    "daysheet": [
+      {
+        "timeslot": "3:00 PM",
+        "event": "Load In"
+      },
+      {
+        "timeslot": "4:30 PM",
+        "event": "Headliner soundcheck"
+      },
+      {
+        "timeslot": "5:30 PM",
+        "event": "Opener soundcheck"
+      },
+      {
+        "timeslot": "7:30 PM",
+        "event": "Doors"
+      },
+      {
+        "timeslot": "7:45-8:15 PM",
+        "event": "honeylip"
+      },
+      {
+        "timeslot": "8:30-9:15 PM",
+        "event": "littleDEATH"
+      },
+      {
+        "timeslot": "9:30-10:45 PM",
+        "event": "The Bigger Lights"
+      }
+    ]
+  },
+  {
+    "date": "March 3, 2024",
+    "venue": "The Fillmore",
+    "address": "123 Market Street",
+    "city": "Baltimore",
+    "state": "MD",
+    "country": "USA",
+    "doors": "7:00 PM",
+    "headliner": "The Bigger Lights",
+    "support": "littleDEATH, honeylip",
+    "parking": false,
+    "soundcheck": true,
+    "lounge": false,
+    "catering": false,
+    "wifi": true,
+    "showers": false,
+    "rider": true,
+    "hotel": false,
+    "daysheet": [
+      {
+        "timeslot": "2:30 PM",
+        "event": "Load In"
+      },
+      {
+        "timeslot": "4:30 PM",
+        "event": "Headliner soundcheck"
+      },
+      {
+        "timeslot": "5:30 PM",
+        "event": "Opener soundcheck"
+      },
+      {
+        "timeslot": "7:00 PM",
+        "event": "Doors"
+      },
+      {
+        "timeslot": "7:30-8:15 PM",
+        "event": "honeylip"
+      },
+      {
+        "timeslot": "8:35-9:25 PM",
+        "event": "littleDEATH"
+      },
+      {
+        "timeslot": "9:45-11:00 PM",
+        "event": "The Bigger Lights"
+      }
+    ]
+  },
+  {
+    "date": "March 4, 2024",
+    "venue": "The Trocadero",
+    "address": "123 5th Street",
+    "city": "Philadelphia",
+    "state": "PA",
+    "country": "USA",
+    "doors": "7:30 PM",
+    "headliner": "The Bigger Lights",
+    "support": "littleDEATH, honeylip",
+    "parking": false,
+    "soundcheck": true,
+    "lounge": true,
+    "catering": false,
+    "wifi": true,
+    "showers": false,
+    "rider": true,
+    "hotel": false,
+    "daysheet": [
+      {
+        "timeslot": "3:00 PM",
+        "event": "Load In"
+      },
+      {
+        "timeslot": "4:30 PM",
+        "event": "Headliner soundcheck"
+      },
+      {
+        "timeslot": "5:30 PM",
+        "event": "Opener soundcheck"
+      },
+      {
+        "timeslot": "7:30 PM",
+        "event": "Doors"
+      },
+      {
+        "timeslot": "7:45-8:15 PM",
+        "event": "honeylip"
+      },
+      {
+        "timeslot": "8:30-9:15 PM",
+        "event": "littleDEATH"
+      },
+      {
+        "timeslot": "9:30-10:45 PM",
+        "event": "The Bigger Lights"
+      }
+    ]
+  },
+  {
+    "date": "March 5, 2024",
+    "venue": "Highline Ballroom",
+    "address": "123 7th Ave",
+    "city": "New York",
+    "state": "NY",
+    "country": "USA",
+    "doors": "7:00 PM",
+    "headliner": "The Bigger Lights",
+    "support": "littleDEATH, honeylip",
+    "parking": false,
+    "soundcheck": true,
+    "lounge": true,
+    "catering": false,
+    "wifi": true,
+    "showers": false,
+    "rider": true,
+    "hotel": false,
+    "daysheet": [
+      {
+        "timeslot": "2:30 PM",
+        "event": "Load In"
+      },
+      {
+        "timeslot": "4:30 PM",
+        "event": "Headliner soundcheck"
+      },
+      {
+        "timeslot": "5:30 PM",
+        "event": "Opener soundcheck"
+      },
+      {
+        "timeslot": "7:00 PM",
+        "event": "Doors"
+      },
+      {
+        "timeslot": "7:30-8:15 PM",
+        "event": "honeylip"
+      },
+      {
+        "timeslot": "8:35-9:25 PM",
+        "event": "littleDEATH"
+      },
+      {
+        "timeslot": "9:45-11:00 PM",
+        "event": "The Bigger Lights"
+      }
+    ]
+  }
+]
