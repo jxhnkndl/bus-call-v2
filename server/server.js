@@ -4,6 +4,7 @@ const db = require('./config/connection');
 const { ApolloServer } = require('@apollo/server');
 const { expressMiddleware } = require('@apollo/server/express4');
 const { typeDefs, resolvers } = require('./schemas');
+const { authMiddleware } = require('./utils/auth');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -11,7 +12,7 @@ const PORT = process.env.PORT || 3001;
 // Init Apollo Server
 const server = new ApolloServer({
   typeDefs,
-  resolvers
+  resolvers,
 });
 
 // Create instance of the Apollo Server
@@ -23,7 +24,9 @@ const startApolloServer = async () => {
   app.use(express.json());
 
   // Connect Express server to Apollo server to /graphql endpoint
-  app.use('/graphql', expressMiddleware(server));
+  app.use('/graphql', expressMiddleware(server, {
+    context: authMiddleware
+  }));
 
   // Serve React build in production
   if (process.env.NODE_ENV === 'production') {
@@ -41,6 +44,6 @@ const startApolloServer = async () => {
       console.log(`Use GraphQL Playground at http://localhost:${PORT}/graphql`);
     });
   });
-}
+};
 
 startApolloServer();
