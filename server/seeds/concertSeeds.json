@@ -1,0 +1,596 @@
+[
+  {
+    "date": "March 1, 2024",
+    "closed": false,
+    "venue": "Bourbon Street Quarter",
+    "address": "316 Guilford Ave",
+    "city": "Baltimore",
+    "state": "MD",
+    "country": "USA",
+    "zip": "21212",
+    "capacity": 450,
+    "promoter": "Paul Manna",
+    "promoterEmail": "paul@booking.com",
+    "doors": "7:30 PM",
+    "headliner": "The Bigger Lights",
+    "support": "littleDEATH, honeylip",
+    "parking": false,
+    "soundcheck": true,
+    "lounge": true,
+    "catering": false,
+    "wifi": true,
+    "showers": false,
+    "rider": true,
+    "hotel": false,
+    "daysheet": [
+      {
+        "timeslot": "3:00 PM",
+        "event": "Load In"
+      },
+      {
+        "timeslot": "4:30 PM",
+        "event": "Headliner soundcheck"
+      },
+      {
+        "timeslot": "5:30 PM",
+        "event": "Opener soundcheck"
+      },
+      {
+        "timeslot": "7:30 PM",
+        "event": "Doors"
+      },
+      {
+        "timeslot": "7:45-8:15 PM",
+        "event": "honeylip"
+      },
+      {
+        "timeslot": "8:35-9:15 PM",
+        "event": "littleDEATH"
+      },
+      {
+        "timeslot": "9:35-11:00 PM",
+        "event": "The Bigger Lights"
+      }
+    ]
+  },
+  {
+    "date": "March 2, 2024",
+    "closed": false,
+    "venue": "School of Rock",
+    "address": "31 Schrieffer St",
+    "city": "South Hackensack",
+    "state": "NJ",
+    "zip": "076060",
+    "country": "USA",
+    "capacity": 480,
+    "promoter": "Heath Miller",
+    "promoterEmail": "heath@booking.com",
+    "doors": "7:00 PM",
+    "headliner": "The Bigger Lights",
+    "support": "littleDEATH, honeylip",
+    "parking": true,
+    "soundcheck": true,
+    "lounge": false,
+    "catering": false,
+    "wifi": true,
+    "showers": false,
+    "rider": true,
+    "hotel": false,
+    "daysheet": [
+      {
+        "timeslot": "2:30 PM",
+        "event": "Load In"
+      },
+      {
+        "timeslot": "4:30 PM",
+        "event": "Headliner soundcheck"
+      },
+      {
+        "timeslot": "5:30 PM",
+        "event": "Opener soundcheck"
+      },
+      {
+        "timeslot": "7:00 PM",
+        "event": "Doors"
+      },
+      {
+        "timeslot": "7:30-8:15 PM",
+        "event": "honeylip"
+      },
+      {
+        "timeslot": "8:35-9:25 PM",
+        "event": "littleDEATH"
+      },
+      {
+        "timeslot": "9:45-11:00 PM",
+        "event": "The Bigger Lights"
+      }
+    ]
+  },
+  {
+    "date": "March 3, 2024",
+    "closed": false,
+    "venue": "Gramercy Theatre",
+    "address": "127 E 23rd St",
+    "city": "New York",
+    "state": "NY",
+    "zip": "10010",
+    "country": "USA",
+    "capacity": 650,
+    "promoter": "Dawn McDonough",
+    "promoterEmail": "dawn@booking.com",
+    "doors": "7:00 PM",
+    "headliner": "The Bigger Lights",
+    "support": "littleDEATH, honeylip",
+    "parking": false,
+    "soundcheck": true,
+    "lounge": true,
+    "catering": false,
+    "wifi": true,
+    "showers": false,
+    "rider": true,
+    "hotel": false,
+    "daysheet": [
+      {
+        "timeslot": "2:30 PM",
+        "event": "Load In"
+      },
+      {
+        "timeslot": "4:30 PM",
+        "event": "Headliner soundcheck"
+      },
+      {
+        "timeslot": "5:30 PM",
+        "event": "Opener soundcheck"
+      },
+      {
+        "timeslot": "7:00 PM",
+        "event": "Doors"
+      },
+      {
+        "timeslot": "7:30-8:15 PM",
+        "event": "honeylip"
+      },
+      {
+        "timeslot": "8:35-9:25 PM",
+        "event": "littleDEATH"
+      },
+      {
+        "timeslot": "9:45-11:00 PM",
+        "event": "The Bigger Lights"
+      }
+    ]
+  },
+  {
+    "date": "March 4, 2024",
+    "closed": false,
+    "venue": "Trocadero",
+    "address": "1003 Arch St",
+    "city": "Philedelphia",
+    "state": "PA",
+    "zip": "19107",
+    "country": "USA",
+    "capacity": 1280,
+    "promoter": "John Hamptom",
+    "promoterEmail": "john@booking.com",
+    "doors": "7:30 PM",
+    "headliner": "The Bigger Lights",
+    "support": "littleDEATH, honeylip",
+    "parking": true,
+    "soundcheck": true,
+    "lounge": true,
+    "catering": true,
+    "wifi": true,
+    "showers": false,
+    "rider": true,
+    "hotel": false,
+    "daysheet": [
+      {
+        "timeslot": "3:00 PM",
+        "event": "Load In"
+      },
+      {
+        "timeslot": "4:30 PM",
+        "event": "Headliner soundcheck"
+      },
+      {
+        "timeslot": "5:30 PM",
+        "event": "Opener soundcheck"
+      },
+      {
+        "timeslot": "7:30 PM",
+        "event": "Doors"
+      },
+      {
+        "timeslot": "7:45-8:15 PM",
+        "event": "honeylip"
+      },
+      {
+        "timeslot": "8:35-9:15 PM",
+        "event": "littleDEATH"
+      },
+      {
+        "timeslot": "9:35-11:00 PM",
+        "event": "The Bigger Lights"
+      }
+    ]
+  },
+  {
+    "date": "March 6, 2024",
+    "closed": false,
+    "venue": "Harpers Ferry",
+    "address": "158 Brighton Ave",
+    "city": "Allston",
+    "state": "MA",
+    "zip": "02134",
+    "country": "USA",
+    "capacity": 650,
+    "promoter": "Mike Delaney",
+    "promoterEmail": "mike@booking.com",
+    "doors": "7:30 PM",
+    "headliner": "The Bigger Lights",
+    "support": "littleDEATH, honeylip",
+    "parking": false,
+    "soundcheck": true,
+    "lounge": true,
+    "catering": false,
+    "wifi": true,
+    "showers": false,
+    "rider": true,
+    "hotel": false,
+    "daysheet": [
+      {
+        "timeslot": "3:00 PM",
+        "event": "Load In"
+      },
+      {
+        "timeslot": "4:30 PM",
+        "event": "Headliner soundcheck"
+      },
+      {
+        "timeslot": "5:30 PM",
+        "event": "Opener soundcheck"
+      },
+      {
+        "timeslot": "7:30 PM",
+        "event": "Doors"
+      },
+      {
+        "timeslot": "7:45-8:15 PM",
+        "event": "honeylip"
+      },
+      {
+        "timeslot": "8:35-9:15 PM",
+        "event": "littleDEATH"
+      },
+      {
+        "timeslot": "9:35-11:00 PM",
+        "event": "The Bigger Lights"
+      }
+    ]
+  },
+  {
+    "date": "March 7, 2024",
+    "closed": false,
+    "venue": "The Basement",
+    "address": "405 Neil Ave",
+    "city": "Columbus",
+    "state": "OH",
+    "country": "USA",
+    "zip": "43215",
+    "capacity": 300,
+    "promoter": "Steve Boyer",
+    "promoterEmail": "steve@booking.com",
+    "doors": "7:00 PM",
+    "headliner": "The Bigger Lights",
+    "support": "littleDEATH, honeylip",
+    "parking": true,
+    "soundcheck": true,
+    "lounge": true,
+    "catering": false,
+    "wifi": true,
+    "showers": false,
+    "rider": true,
+    "hotel": false,
+    "daysheet": [
+      {
+        "timeslot": "2:30 PM",
+        "event": "Load In"
+      },
+      {
+        "timeslot": "4:30 PM",
+        "event": "Headliner soundcheck"
+      },
+      {
+        "timeslot": "5:30 PM",
+        "event": "Opener soundcheck"
+      },
+      {
+        "timeslot": "7:00 PM",
+        "event": "Doors"
+      },
+      {
+        "timeslot": "7:30-8:15 PM",
+        "event": "honeylip"
+      },
+      {
+        "timeslot": "8:35-9:25 PM",
+        "event": "littleDEATH"
+      },
+      {
+        "timeslot": "9:45-11:00 PM",
+        "event": "The Bigger Lights"
+      }
+    ]
+  },
+  {
+    "date": "March 8, 2024",
+    "closed": false,
+    "venue": "Peabody's",
+    "address": "2083 E 21st St",
+    "city": "Cleveland",
+    "state": "OH",
+    "country": "USA",
+    "zip": "44115",
+    "capacity": 1280,
+    "promoter": "Chris Zitterbart",
+    "promoterEmail": "chris@booking.com",
+    "doors": "6:30 PM",
+    "headliner": "The Bigger Lights",
+    "support": "littleDEATH, honeylip",
+    "parking": true,
+    "soundcheck": true,
+    "lounge": true,
+    "catering": true,
+    "wifi": true,
+    "showers": false,
+    "rider": true,
+    "hotel": true,
+    "daysheet": [
+      {
+        "timeslot": "2:00 PM",
+        "event": "Load In"
+      },
+      {
+        "timeslot": "3:30 PM",
+        "event": "Headliner soundcheck"
+      },
+      {
+        "timeslot": "4:45 PM",
+        "event": "Opener soundcheck"
+      },
+      {
+        "timeslot": "6:30 PM",
+        "event": "Doors"
+      },
+      {
+        "timeslot": "6:45-7:15 PM",
+        "event": "honeylip"
+      },
+      {
+        "timeslot": "7:35-8:15 PM",
+        "event": "littleDEATH"
+      },
+      {
+        "timeslot": "8:40-10:00 PM",
+        "event": "The Bigger Lights"
+      }
+    ]
+  },
+  {
+    "date": "March 9, 2024",
+    "closed": false,
+    "venue": "St. Andrew's Hall",
+    "address": "431 E Congress",
+    "city": "Detroit",
+    "state": "MI",
+    "zip": "48226",
+    "country": "USA",
+    "capacity": 800,
+    "promoter": "Josh Newman",
+    "promoterEmail": "josh@booking.com",
+    "doors": "7:30 PM",
+    "headliner": "The Bigger Lights",
+    "support": "littleDEATH, honeylip",
+    "parking": false,
+    "soundcheck": true,
+    "lounge": false,
+    "catering": false,
+    "wifi": true,
+    "showers": false,
+    "rider": true,
+    "hotel": true,
+    "daysheet": [
+      {
+        "timeslot": "3:00 PM",
+        "event": "Load In"
+      },
+      {
+        "timeslot": "4:30 PM",
+        "event": "Headliner soundcheck"
+      },
+      {
+        "timeslot": "5:30 PM",
+        "event": "Opener soundcheck"
+      },
+      {
+        "timeslot": "7:30 PM",
+        "event": "Doors"
+      },
+      {
+        "timeslot": "7:45-8:15 PM",
+        "event": "honeylip"
+      },
+      {
+        "timeslot": "8:35-9:15 PM",
+        "event": "littleDEATH"
+      },
+      {
+        "timeslot": "9:35-11:00 PM",
+        "event": "The Bigger Lights"
+      }
+    ]
+  },
+  {
+    "date": "March 10, 2024",
+    "closed": false,
+    "venue": "House of Bricks",
+    "address": "525 E Grand Ave",
+    "city": "Des Moines",
+    "state": "IA",
+    "zip": "50310",
+    "country": "USA",
+    "capacity": 350,
+    "promoter": "Sam Summers",
+    "promoterEmail": "sam@booking.com",
+    "doors": "7:00 PM",
+    "headliner": "The Bigger Lights",
+    "support": "littleDEATH, honeylip",
+    "parking": true,
+    "soundcheck": true,
+    "lounge": false,
+    "catering": false,
+    "wifi": true,
+    "showers": false,
+    "rider": false,
+    "hotel": true,
+    "daysheet": [
+      {
+        "timeslot": "2:30 PM",
+        "event": "Load In"
+      },
+      {
+        "timeslot": "4:30 PM",
+        "event": "Headliner soundcheck"
+      },
+      {
+        "timeslot": "5:30 PM",
+        "event": "Opener soundcheck"
+      },
+      {
+        "timeslot": "7:30 PM",
+        "event": "Doors"
+      },
+      {
+        "timeslot": "7:45-8:15 PM",
+        "event": "honeylip"
+      },
+      {
+        "timeslot": "8:35-9:15 PM",
+        "event": "littleDEATH"
+      },
+      {
+        "timeslot": "9:35-11:00 PM",
+        "event": "The Bigger Lights"
+      }
+    ]
+  },
+  {
+    "date": "March 11, 2024",
+    "closed": false,
+    "venue": "Mojoe's Rock House",
+    "address": "7537 W 159th St",
+    "city": "Tinley Park",
+    "state": "IL",
+    "country": "USA",
+    "zip": "60477",
+    "capacity": 600,
+    "promoter": "Christopher Tribes",
+    "promoterEmail": "christopher@booking.com",
+    "doors": "6:30 PM",
+    "headliner": "The Bigger Lights",
+    "support": "littleDEATH, honeylip",
+    "parking": true,
+    "soundcheck": true,
+    "lounge": true,
+    "catering": true,
+    "wifi": true,
+    "showers": false,
+    "rider": true,
+    "hotel": true,
+    "daysheet": [
+      {
+        "timeslot": "2:00 PM",
+        "event": "Load In"
+      },
+      {
+        "timeslot": "3:30 PM",
+        "event": "Headliner soundcheck"
+      },
+      {
+        "timeslot": "4:45 PM",
+        "event": "Opener soundcheck"
+      },
+      {
+        "timeslot": "6:30 PM",
+        "event": "Doors"
+      },
+      {
+        "timeslot": "6:45-7:15 PM",
+        "event": "honeylip"
+      },
+      {
+        "timeslot": "7:35-8:15 PM",
+        "event": "littleDEATH"
+      },
+      {
+        "timeslot": "8:40-10:00 PM",
+        "event": "The Bigger Lights"
+      }
+    ]
+  },
+  {
+    "date": "March 12, 2024",
+    "closed": false,
+    "venue": "The Rave",
+    "address": "2401 W Wisconsin Ave",
+    "city": "Detroit",
+    "state": "MI",
+    "zip": "48226",
+    "country": "USA",
+    "capacity": 1000,
+    "promoter": "Leslie West",
+    "promoterEmail": "leslie@booking.com",
+    "doors": "7:30 PM",
+    "headliner": "The Bigger Lights",
+    "support": "littleDEATH, honeylip",
+    "parking": true,
+    "soundcheck": true,
+    "lounge": true,
+    "catering": true,
+    "wifi": true,
+    "showers": true,
+    "rider": true,
+    "hotel": false,
+    "daysheet": [
+      {
+        "timeslot": "3:00 PM",
+        "event": "Load In"
+      },
+      {
+        "timeslot": "4:30 PM",
+        "event": "Headliner soundcheck"
+      },
+      {
+        "timeslot": "5:30 PM",
+        "event": "Opener soundcheck"
+      },
+      {
+        "timeslot": "7:30 PM",
+        "event": "Doors"
+      },
+      {
+        "timeslot": "7:45-8:15 PM",
+        "event": "honeylip"
+      },
+      {
+        "timeslot": "8:35-9:15 PM",
+        "event": "littleDEATH"
+      },
+      {
+        "timeslot": "9:35-11:00 PM",
+        "event": "The Bigger Lights"
+      }
+    ]
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "email": "jk@jk.com",
+    "password": "password",
+    "firstName": "J.K.",
+    "lastName": "Royston",
+    "bio": "I'm baby ethical direct trade literally trust fund echo park, chia vegan jean shorts kickstarter gorpcore gluten-free. Raclette master cleanse normcore, 8-bit vice next level mlkshk pork belly. Seitan cray craft beer tonx. Brunch intelligentsia meggings, selvage street art austin glossier keffiyeh. Roof party church-key brunch, copper mug squid taxidermy PBR&B tonx wayfarers affogato neutral milk hotel letterpress hexagon. Irony cliche la croix, messenger bag shabby chic thundercats heirloom pitchfork. JOMO chicharrones mumblecore gastropub shabby chic intelligentsia woke readymade.",
+    "roles": ["Performer", "Guitar Tech", "Merch", "Tour Manager"]
+  },
+  {
+    "email": "dan@dan.com",
+    "password": "password",
+    "firstName": "Dan",
+    "lastName": "Mineart",
+    "bio": "I'm baby yOLO hashtag poke brunch blog, praxis trust fund unicorn. Semiotics swag neutral milk hotel, solarpunk vaporware adaptogen vape JOMO mumblecore cred ugh umami. Viral letterpress farm-to-table la croix normcore. Put a bird on it selfies tacos drinking vinegar biodiesel, humblebrag meh jianbing intelligentsia bushwick.",
+    "roles": ["Performer", "FOH", "Monitors", "Driver"]
+  },
+  {
+    "email": "ford@ford.com",
+    "password": "password",
+    "firstName": "Ford",
+    "lastName": "Wesson",
+    "bio": "I'm baby lumbersexual godard jawn, air plant health goth solarpunk sriracha hexagon la croix succulents marfa enamel pin williamsburg artisan mixtape. Blue bottle XOXO raclette helvetica austin. Authentic taxidermy roof party, vape butcher squid hashtag jianbing vinyl normcore tofu wolf. Af tofu hell of fanny pack blackbird spyplane pug glossier mustache yes plz hella +1.",
+    "roles": ["Performer", "Promoter", "Merch"]
+  }
+]

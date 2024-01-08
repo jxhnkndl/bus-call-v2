@@ -1,17 +1,5 @@
 [
   {
-    "name": "The Bigger Lights",
-    "email": "tbl@tbl.com",
-    "password": "password"
-  },
-  {
-    "name": "littleDEATH",
-    "email": "ld@ld.com",
-    "password": "password"
-  },
-  {
-    "name": "honeylip",
-    "email": "hl@hl.com",
-    "password": "password"
+    "name": "The Bigger Lights"
   }
 ]
