@@ -7,6 +7,10 @@ const concertSchema = new Schema(
       type: Date,
       required: true
     },
+    closed: {
+      type: Boolean,
+      default: false
+    },
     venue: {
       type: String,
       required: true,
@@ -26,9 +30,25 @@ const concertSchema = new Schema(
       type: String,
       trim: true,
     },
+    zip: {
+      type: String,
+      trim: true
+    },
     country: {
       type: String,
       trim: true
+    },
+    capacity: {
+      type: Number,
+    },
+    promoter: {
+      type: String,
+      trim: true
+    },
+    promoterEmail: {
+      type: String,
+      trim: true,
+      match: [/.+@.+\..+/, 'Must use a valid email address'],
     },
     doors: {
       type: String,
