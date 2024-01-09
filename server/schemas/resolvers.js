@@ -14,6 +14,17 @@ const resolvers = {
 
       throw AuthenticationError;
     },
+    getConcert: async (parent, { concertId }, context) => {
+      if (context.user) {
+        const concert = await Concert.findById(concertId);
+
+        console.log(concert);
+
+        return concert;
+      }
+
+      throw AuthenticationError;
+    }
   },
   Mutation: {
     createUser: async (parent, args) => {

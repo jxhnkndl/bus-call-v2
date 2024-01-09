@@ -56,6 +56,7 @@ const typeDefs = `
 
   type Query {
     me: User
+    getConcert(concertId: String!): Concert
   }
 
   type Mutation {
