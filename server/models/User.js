@@ -56,7 +56,7 @@ userSchema.pre('save', async function (next) {
 });
 
 // Check credentials when user logs in
-userSchema.methods.isCorrectPassword = async function (password) {
+userSchema.methods.checkPassword = async function (password) {
   return bcrypt.compare(password, this.password);
 };
 

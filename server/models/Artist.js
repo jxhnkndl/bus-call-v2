@@ -18,10 +18,6 @@ const artistSchema = new Schema({
       ref: 'User',
     },
   ],
-  admin: {
-    type: Schema.Types.ObjectId,
-    ref: 'User',
-  }
 });
 
 const Artist = model('Artist', artistSchema);

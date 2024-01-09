@@ -15,7 +15,6 @@ const typeDefs = `
     name: String!
     concerts: [Concert]
     crew: [User]
-    admin: User
   }
 
   type Concert {
@@ -61,6 +60,7 @@ const typeDefs = `
 
   type Mutation {
     createUser(email: String!, password: String!, firstName: String!, lastName: String!, bio: String, profilePhoto: String, roles: [String]): Auth
+    login(email: String!, password: String!): Auth
   }
 `;
 
