@@ -34,6 +34,7 @@ const authMiddleware = ({ req }) => {
 };
 
 // Sign new JSON web tokens when user register for or logs into account
+// Token accepts user object and destructures the _id and email fields from it
 const signToken = ({ _id, email }) => {
   const payload = { _id, email };
   return jwt.sign({ data: payload }, secret, { expiresIn: expiration });
