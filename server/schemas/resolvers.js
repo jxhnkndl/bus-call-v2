@@ -4,7 +4,15 @@ const { signToken, AuthenticationError } = require('../utils/auth');
 const resolvers = {
   Query: {
     me: async (parent, args, context) => {
-      return 'Hello';
+      if (context.user) {
+        const user = await User.findOne({ _id: context.user._id }).select(
+          '-password -__v'
+        );
+
+        return user;
+      }
+
+      throw AuthenticationError;
     },
   },
   Mutation: {
