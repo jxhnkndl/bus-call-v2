@@ -2,46 +2,27 @@ const { Artist, Concert, User } = require('../models');
 const { signToken, AuthenticationError } = require('../utils/auth');
 
 const resolvers = {
-  Query: {
-    me: async (parent, args, context) => {
-      if (context.user) {
-        const user = await User.findOne({ _id: context.user._id }).select(
-          '-password -__v'
-        );
-
-        return user;
-      }
-
-      throw AuthenticationError;
-    },
-    getConcert: async (parent, { concertId }, context) => {
-      if (context.user) {
-        const concert = await Concert.findById(concertId);
-
-        console.log(concert);
-
-        return concert;
-      }
-
-      throw AuthenticationError;
-    }
-  },
+  Query: {},
   Mutation: {
     createUser: async (parent, args) => {
       const user = await User.create(args);
       const token = signToken(user);
-
-      console.log(user);
-
       return { token, user };
     },
-    login: async (parent, { email, password }) => {
+    login: async (parent, { type, email, password }) => {
       const user = await User.findOne({ email })
         .select('-__v')
         .populate({
           path: 'artists',
           select: '-__v ',
-          populate: { path: 'concerts', select: '-__v' },
+          populate: [
+            { path: 'concerts', select: '-__v' },
+            { path: 'crew', select: '-__v' },
+          ],
+        })
+        .populate({
+          path: 'admin',
+          select: '-__v',
         });
 
       if (!user) {
