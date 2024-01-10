@@ -8,11 +8,24 @@ const typeDefs = `
     profilePhoto: String
     roles: [String]
     artists: [Artist]
+    admin: [Artist]
   }  
+
+  type Contact {
+    name: String
+    phone: String
+    email: String
+  }
 
   type Artist {
     _id: ID!
     name: String!
+    bio: String
+    profilePhoto: String
+    label: Contact
+    manager: Contact
+    bookingAgent: Contact
+    tourManager: Contact
     concerts: [Concert]
     crew: [User]
   }
@@ -49,14 +62,14 @@ const typeDefs = `
     event: String!
   }
 
+
   type Auth {
     token: ID!
     user: User
   }
 
   type Query {
-    me: User
-    getConcert(concertId: String!): Concert
+    me: Auth
   }
 
   type Mutation {
