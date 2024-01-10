@@ -1,5 +1,29 @@
 [
   {
-    "name": "The Bigger Lights"
+    "email": "tbl@tbl.com",
+    "password": "password",
+    "name": "The Bigger Lights",
+    "bio": "The Bigger Lights was an American rock band based in Vienna, Virginia. The band signed with Doghouse Records less than one year after forming.Fiction Fever was released on October 7, 2008. Their self-titled debut album was released on March 30, 2010. The Bigger Lights announced on Twitter and Facebook on July 5 that they will be releasing their second full-length album, Battle Hymn, on July 12.",
+    "profilePhoto": "https://res.cloudinary.com/j9humweh99f2/image/upload/v1704899110/IMG_8974_hnxfrz.jpg",
+    "label": {
+      "name": "Doghouse Records",
+      "phone": "000-000-0000",
+      "email": "doghouse@doghouse.com"
+    },
+    "manager": {
+      "name": "Nano Tissera",
+      "phone": "123-456-7890",
+      "email": "nano@nano.com"
+    },
+    "bookingAgent": {
+      "name": "Ford Wesson",
+      "phone": "098-765-4321",
+      "email": "ford@ford.com"
+    },
+    "tourManager": {
+      "name": "Nicole Smith",
+      "phone": "111-222-3333",
+      "email": "nicole@nicole.com"
+    }
   }
 ]

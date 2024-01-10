@@ -8,6 +8,14 @@
     "roles": ["Performer", "Guitar Tech", "Merch", "Tour Manager"]
   },
   {
+    "email": "topher@topher.com",
+    "password": "password",
+    "firstName": "Topher",
+    "lastName": "Talley",
+    "bio": "Disrupt franzen green juice tumblr chambray semiotics cornhole mukbang gochujang adaptogen before they sold out. Selfies coloring book banjo chia YOLO vexillologist organic af pinterest kombucha taxidermy taiyaki chillwave glossier fanny pack. Church-key pour-over pug craft beer, +1 cronut unicorn. Celiac neutra fixie vexillologist same four dollar toast. Disrupt blog kombucha, cliche hexagon sartorial wolf gastropub brunch tbh woke austin lomo succulents.",
+    "roles": ["Performer", "Merch", "Tour Manager", "Driver"]
+  },
+  {
     "email": "dan@dan.com",
     "password": "password",
     "firstName": "Dan",
@@ -16,11 +24,27 @@
     "roles": ["Performer", "FOH", "Monitors", "Driver"]
   },
   {
-    "email": "ford@ford.com",
+    "email": "chris@chris.com",
     "password": "password",
-    "firstName": "Ford",
-    "lastName": "Wesson",
+    "firstName": "Chris",
+    "lastName": "McPeters",
+    "bio": "Gluten-free artisan hashtag hella yr health goth, solarpunk YOLO drinking vinegar flannel blog vexillologist ugh actually disrupt. Letterpress adaptogen DIY affogato. Whatever pug YOLO, austin ethical bodega boys gatekeep +1 synth glossier. Glossier vibecession kombucha authentic JOMO tumeric raclette cornhole tilde helvetica raw denim. Yr gochujang la croix offal adaptogen. Letterpress DIY grailed helvetica seitan craft beer intelligentsia tumblr forage.",
+    "roles": ["Performer", "Guitar Tech", "Merch", "Driver"]
+  },
+  {
+    "email": "ryan@ryan.com",
+    "password": "password",
+    "firstName": "Ryan",
+    "lastName": "Seaman",
+    "bio": "Meh neutral milk hotel neutra, mumblecore blue bottle snackwave tonx semiotics. Wolf skateboard fanny pack, aesthetic yes plz chillwave bushwick 90's cliche. Tbh sartorial taiyaki jianbing big mood jean shorts vinyl ascot pitchfork taxidermy craft beer kinfolk meditation. Cray pug swag artisan vape succulents. 3 wolf moon subway tile gochujang swag tacos readymade. Blog raw denim lyft, intelligentsia prism twee succulents godard wolf bodega boys lomo cray venmo.",
+    "roles": ["Performer", "Drum Tech", "Tour Manager", "Merch", "Driver"]
+  },
+  {
+    "email": "nicole@nicole.com",
+    "password": "password",
+    "firstName": "Nicole",
+    "lastName": "Smith",
     "bio": "I'm baby lumbersexual godard jawn, air plant health goth solarpunk sriracha hexagon la croix succulents marfa enamel pin williamsburg artisan mixtape. Blue bottle XOXO raclette helvetica austin. Authentic taxidermy roof party, vape butcher squid hashtag jianbing vinyl normcore tofu wolf. Af tofu hell of fanny pack blackbird spyplane pug glossier mustache yes plz hella +1.",
-    "roles": ["Performer", "Promoter", "Merch"]
+    "roles": ["Tour Manager", "Merch"]
   }
 ]
