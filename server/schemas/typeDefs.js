@@ -81,8 +81,6 @@ const typeDefs = `
     login(email: String!, password: String!): Auth
 
     createUser(email: String!, password: String!, firstName: String!, lastName: String!, bio: String, profilePhoto: String, roles: [String]): Auth
-
-    createArtist(name: String!, bio: String, profilePhoto: String, label: ContactInput, manager: ContactInput, bookingAgent: ContactInput, tourManager: ContactInput): Artist
   }
 `;
 
