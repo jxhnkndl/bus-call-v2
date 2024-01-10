@@ -22,19 +22,21 @@ const seedDb = async () => {
       // Create new artist and make first user in database the artist admin
       const artist = await Artist.create({ ...artistSeeds[0] });
 
-      const userIds = [];
-
       // Seed Users
       console.log('CREATING USERS 👀');
 
       for (let i = 0; i < userSeeds.length; i++) {
         console.log(`CREATING USER #${i} ✅`);
 
+        // Make first user in user seeds the artist admin
+        // Add artist to every user's artist access array
         const user = await User.create({
           ...userSeeds[i],
-          artists: [artist._id]
+          artists: [artist._id],
+          admin: i === 0 ? [artist._id] : []
         });
 
+        // Add each user to the artist's crew array
         artist.crew.push(user._id);
 
         await artist.save();
