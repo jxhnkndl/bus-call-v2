@@ -43,6 +43,12 @@ const userSchema = new Schema({
       ref: 'Artist',
     },
   ],
+  admin: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: 'Artist'
+    }
+  ]
 });
 
 // Hash password for new accounts and accounts updating password field
