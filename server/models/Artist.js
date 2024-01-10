@@ -1,4 +1,5 @@
 const { Schema, model } = require('mongoose');
+const bcrypt = require('bcrypt');
 
 const artistSchema = new Schema({
   email: {
@@ -24,27 +25,27 @@ const artistSchema = new Schema({
     trim: true,
   },
   profilePhoto: {
-    type: String
+    type: String,
   },
   label: {
     name: { type: String },
     phone: { type: String },
-    email: { type: String }
+    email: { type: String },
   },
   manager: {
     name: { type: String },
     phone: { type: String },
-    email: { type: String }
+    email: { type: String },
   },
   bookingAgent: {
     name: { type: String },
     phone: { type: String },
-    email: { type: String }
+    email: { type: String },
   },
   tourManager: {
     name: { type: String },
     phone: { type: String },
-    email: { type: String }
+    email: { type: String },
   },
   concerts: [
     {
@@ -59,6 +60,21 @@ const artistSchema = new Schema({
     },
   ],
 });
+
+// Hash password for new accounts and accounts updating password field
+artistSchema.pre('save', async function (next) {
+  if (this.isNew || this.isModified('password')) {
+    const saltRounds = 10;
+    this.password = await bcrypt.hash(this.password, saltRounds);
+  }
+
+  next();
+});
+
+// Check credentials when user logs in
+artistSchema.methods.checkPassword = async function (password) {
+  return bcrypt.compare(password, this.password);
+};
 
 const Artist = model('Artist', artistSchema);
 
