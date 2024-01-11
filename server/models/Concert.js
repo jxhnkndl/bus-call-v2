@@ -1,5 +1,19 @@
 const { Schema, model } = require('mongoose');
-const timeslotSchema = require('./Timeslot');
+
+const timeslotSchema = new Schema(
+  {
+    timeslot: {
+      type: String,
+      required: true,
+      trim: true,
+    },
+    event: {
+      type: String,
+      required: true,
+      trim: true
+    }
+  }
+);
 
 const concertSchema = new Schema(
   {

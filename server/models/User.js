@@ -2,12 +2,6 @@ const { Schema, model } = require('mongoose');
 const bcrypt = require('bcrypt');
 
 const userSchema = new Schema({
-  accountType: {
-    type: String,
-    enum: ['user', 'admin'],
-    required: true,
-    default: 'user'
-  },
   email: {
     type: String,
     required: true,
@@ -39,12 +33,6 @@ const userSchema = new Schema({
     type: String
   },
   roles: [{ type: String }],
-  artists: [
-    {
-      type: Schema.Types.ObjectId,
-      ref: 'Artist',
-    },
-  ],
 });
 
 // Hash password for new accounts and accounts updating password field

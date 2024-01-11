@@ -1,9 +1,9 @@
-const Artist = require('./Artist');
-const Concert = require('./Concert');
 const User = require('./User')
+const Tour = require('./Tour')
+const Concert = require('./Concert');
 
 module.exports = {
-  Artist,
+  User,
+  Tour,
   Concert,
-  User
 }
