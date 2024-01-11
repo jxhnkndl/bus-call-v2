@@ -1,5 +1,6 @@
 const jwt = require('jsonwebtoken');
 const { GraphQLError } = require('graphql');
+const {User, Artist} = require('../models');
 
 require('dotenv').config();
 
@@ -42,10 +43,5 @@ const signToken = ({ _id, email }) => {
 
 module.exports = {
   authMiddleware,
-  signToken,
-  AuthenticationError: new GraphQLError('Failed to authenticate user', {
-    extensions: {
-      code: 'UNAUTHENTICATED',
-    },
-  }),
+  signToken
 };
