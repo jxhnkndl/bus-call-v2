@@ -3,8 +3,8 @@ const typeDefs = `
     _id: ID!
     accountType: String!
     email: String!
-    firstName: String!
-    lastName: String!
+    firstName: String
+    lastName: String
     bio: String
     profilePhoto: String
     roles: [String]
@@ -42,9 +42,9 @@ const typeDefs = `
     date: String!
     closed: Boolean
     venue: String!
-    address: String!
+    address: String
     city: String!
-    state: String
+    state: String!
     zip: String
     country: String
     capacity: Int

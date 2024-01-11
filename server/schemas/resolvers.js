@@ -15,10 +15,6 @@ const resolvers = {
               { path: 'concerts', select: '-__v' },
               { path: 'crew', select: '-__v' },
             ],
-          })
-          .populate({
-            path: 'admin',
-            select: '-__v'
           });
 
         if (!user) throw AuthenticationError;
