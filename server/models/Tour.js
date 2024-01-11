@@ -9,9 +9,19 @@ const tourSchema = new Schema({
   support: [{ type: String }],
   name: { type: String },
   tourManager: {
-    name: { type: String },
-    phone: { type: String },
-    email: { type: String },
+    name: {
+      type: String,
+      trim: true,
+    },
+    phone: {
+      type: String,
+      trim: true,
+    },
+    email: {
+      type: String,
+      trim: true,
+      match: [/.+@.+\..+/, 'Must use a valid email address'],
+    },
   },
   concerts: [
     {
