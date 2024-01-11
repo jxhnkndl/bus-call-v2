@@ -1,6 +1,7 @@
 const typeDefs = `
   type User {
     _id: ID!
+    accountType: String!
     email: String!
     firstName: String!
     lastName: String!
@@ -8,20 +9,7 @@ const typeDefs = `
     profilePhoto: String
     roles: [String]
     artists: [Artist]
-    admin: [Artist]
   }  
-
-  type Contact {
-    name: String
-    phone: String
-    email: String
-  }
-
-  input ContactInput {
-    name: String
-    phone: String
-    email: String
-  }
 
   type Artist {
     _id: ID!
@@ -34,6 +22,19 @@ const typeDefs = `
     tourManager: Contact
     concerts: [Concert]
     crew: [User]
+    admin: User
+  }
+
+  type Contact {
+    name: String
+    email: String
+    phone: String
+  }
+
+  input ContactInput {
+    name: String
+    email: String
+    phone: String
   }
 
   type Concert {
@@ -74,13 +75,35 @@ const typeDefs = `
   }
 
   type Query {
-    me: Auth
+    me: User
   }
 
   type Mutation {
-    login(email: String!, password: String!): Auth
+    login(
+      email: String!, 
+      password: String!
+    ): Auth
 
-    createUser(email: String!, password: String!, firstName: String!, lastName: String!, bio: String, profilePhoto: String, roles: [String]): Auth
+    createUser(
+      accountType: String!
+      email: String!, 
+      password: String!, 
+      firstName: String!, 
+      lastName: String!, 
+      bio: String, 
+      profilePhoto: String, 
+      roles: [String]
+    ): Auth
+  
+    createArtist(
+      name: String!
+      bio: String
+      profilePhoto: String
+      label: ContactInput
+      manager: ContactInput
+      bookingAgent: ContactInput
+      tourManager: ContactInput
+    ): User
   }
 `;
 

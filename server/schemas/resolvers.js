@@ -18,7 +18,7 @@ const resolvers = {
           })
           .populate({
             path: 'admin',
-            select: '-__v',
+            select: '-__v'
           });
 
         if (!user) throw AuthenticationError;
