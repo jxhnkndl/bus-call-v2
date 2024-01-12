@@ -1,37 +1,16 @@
 const typeDefs = `
   type User {
     _id: ID!
-    accountType: String!
-    email: String!
+    email: String
     firstName: String
     lastName: String
     bio: String
     profilePhoto: String
     roles: [String]
-    artists: [Artist]
+    concerts: [Concert]
   }  
 
-  type Artist {
-    _id: ID!
-    name: String!
-    bio: String
-    profilePhoto: String
-    label: Contact
-    manager: Contact
-    bookingAgent: Contact
-    tourManager: Contact
-    concerts: [Concert]
-    crew: [User]
-    admin: User
-  }
-
-  type Contact {
-    name: String
-    email: String
-    phone: String
-  }
-
-  input ContactInput {
+  type ContactInfo {
     name: String
     email: String
     phone: String
@@ -39,20 +18,20 @@ const typeDefs = `
 
   type Concert {
     _id: ID!
-    date: String!
-    closed: Boolean
-    venue: String!
+    date: String
+    headliner: String
+    support: [String]
+    venue: String
     address: String
-    city: String!
-    state: String!
+    city: String
+    state: String
     zip: String
     country: String
     capacity: Int
-    promoter: String
-    promoterEmail: String
-    doors: String!
-    headliner: String!
-    support: String
+    doors: String
+    promoter: ContactInfo
+    bookingAgent: ContactInfo
+    tourManager: ContactInfo
     parking: Boolean
     soundcheck: Boolean
     lounge: Boolean
@@ -62,6 +41,7 @@ const typeDefs = `
     rider: Boolean
     hotel: Boolean
     daysheet: [Timeslot]
+    closed: Boolean
   }
 
   type Timeslot {
@@ -74,36 +54,18 @@ const typeDefs = `
     user: User
   }
 
+  input ContactInput {
+    name: String
+    email: String
+    phone: String
+  }
+
   type Query {
-    me: User
+
   }
 
   type Mutation {
-    login(
-      email: String!, 
-      password: String!
-    ): Auth
 
-    createUser(
-      accountType: String!
-      email: String!, 
-      password: String!, 
-      firstName: String!, 
-      lastName: String!, 
-      bio: String, 
-      profilePhoto: String, 
-      roles: [String]
-    ): Auth
-  
-    createArtist(
-      name: String!
-      bio: String
-      profilePhoto: String
-      label: ContactInput
-      manager: ContactInput
-      bookingAgent: ContactInput
-      tourManager: ContactInput
-    ): User
   }
 `;
 
