@@ -1,7 +1,8 @@
 [
   {
     "date": "March 1, 2024",
-    "closed": false,
+    "headliner": "The Bigger Lights",
+    "support": ["littleDEATH", "honeylip"],
     "venue": "Bourbon Street Quarter",
     "address": "316 Guilford Ave",
     "city": "Baltimore",
@@ -13,6 +14,16 @@
       "name": "Paul Manna",
       "phone": "000-000-0000",
       "email": "paul@booking.com"
+    },
+    "bookingAgent": {
+      "name": "Ford Wesson",
+      "phone": "111-111-1111",
+      "email": "ford@agent.com"
+    },
+    "tourManager": {
+      "name": "Nicole Smith",
+      "phone": "222-222-2222",
+      "email": "nikki@tm.com"
     },
     "promoterEmail": "paul@booking.com",
     "doors": "7:30 PM",
@@ -57,7 +68,8 @@
   },
   {
     "date": "March 2, 2024",
-    "closed": false,
+    "headliner": "The Bigger Lights",
+    "support": ["littleDEATH", "honeylip"],
     "venue": "School of Rock",
     "address": "31 Schrieffer St",
     "city": "South Hackensack",
@@ -69,6 +81,16 @@
       "name": "Heath Miller",
       "phone": "000-000-0000",
       "email": "heath@booking.com"
+    },
+    "bookingAgent": {
+      "name": "Ford Wesson",
+      "phone": "111-111-1111",
+      "email": "ford@agent.com"
+    },
+    "tourManager": {
+      "name": "Nicole Smith",
+      "phone": "222-222-2222",
+      "email": "nikki@tm.com"
     },
     "doors": "7:00 PM",
     "parking": true,
@@ -112,7 +134,8 @@
   },
   {
     "date": "March 3, 2024",
-    "closed": false,
+    "headliner": "The Bigger Lights",
+    "support": ["littleDEATH", "honeylip"],
     "venue": "Gramercy Theatre",
     "address": "127 E 23rd St",
     "city": "New York",
@@ -124,6 +147,16 @@
       "name": "Dawn McDonaugh",
       "phone": "000-000-0000",
       "email": "dawn@booking.com"
+    },
+    "bookingAgent": {
+      "name": "Ford Wesson",
+      "phone": "111-111-1111",
+      "email": "ford@agent.com"
+    },
+    "tourManager": {
+      "name": "Nicole Smith",
+      "phone": "222-222-2222",
+      "email": "nikki@tm.com"
     },
     "doors": "7:00 PM",
     "parking": false,
@@ -167,7 +200,8 @@
   },
   {
     "date": "March 4, 2024",
-    "closed": false,
+    "headliner": "The Bigger Lights",
+    "support": ["littleDEATH", "honeylip"],
     "venue": "Trocadero",
     "address": "1003 Arch St",
     "city": "Philedelphia",
@@ -179,6 +213,16 @@
       "name": "John Hampton",
       "phone": "000-000-0000",
       "email": "john@booking.com"
+    },
+    "bookingAgent": {
+      "name": "Ford Wesson",
+      "phone": "111-111-1111",
+      "email": "ford@agent.com"
+    },
+    "tourManager": {
+      "name": "Nicole Smith",
+      "phone": "222-222-2222",
+      "email": "nikki@tm.com"
     },
     "doors": "7:30 PM",
     "parking": true,
@@ -222,7 +266,8 @@
   },
   {
     "date": "March 6, 2024",
-    "closed": false,
+    "headliner": "The Bigger Lights",
+    "support": ["littleDEATH", "honeylip"],
     "venue": "Harpers Ferry",
     "address": "158 Brighton Ave",
     "city": "Allston",
@@ -234,6 +279,16 @@
       "name": "Mike Delaney",
       "phone": "000-000-0000",
       "email": "mike@booking.com"
+    },
+    "bookingAgent": {
+      "name": "Ford Wesson",
+      "phone": "111-111-1111",
+      "email": "ford@agent.com"
+    },
+    "tourManager": {
+      "name": "Nicole Smith",
+      "phone": "222-222-2222",
+      "email": "nikki@tm.com"
     },
     "doors": "7:30 PM",
     "parking": false,
@@ -277,7 +332,8 @@
   },
   {
     "date": "March 7, 2024",
-    "closed": false,
+    "headliner": "The Bigger Lights",
+    "support": ["littleDEATH", "honeylip"],
     "venue": "The Basement",
     "address": "405 Neil Ave",
     "city": "Columbus",
@@ -289,6 +345,16 @@
       "name": "Steve Boyer",
       "phone": "000-000-0000",
       "email": "steve@booking.com"
+    },
+    "bookingAgent": {
+      "name": "Ford Wesson",
+      "phone": "111-111-1111",
+      "email": "ford@agent.com"
+    },
+    "tourManager": {
+      "name": "Nicole Smith",
+      "phone": "222-222-2222",
+      "email": "nikki@tm.com"
     },
     "doors": "7:00 PM",
     "parking": true,
@@ -332,7 +398,8 @@
   },
   {
     "date": "March 8, 2024",
-    "closed": false,
+    "headliner": "The Bigger Lights",
+    "support": ["littleDEATH", "honeylip"],
     "venue": "Peabody's",
     "address": "2083 E 21st St",
     "city": "Cleveland",
@@ -344,6 +411,16 @@
       "name": "Chris Zitterbart",
       "phone": "000-000-0000",
       "email": "chris@booking.com"
+    },
+    "bookingAgent": {
+      "name": "Ford Wesson",
+      "phone": "111-111-1111",
+      "email": "ford@agent.com"
+    },
+    "tourManager": {
+      "name": "Nicole Smith",
+      "phone": "222-222-2222",
+      "email": "nikki@tm.com"
     },
     "doors": "6:30 PM",
     "parking": true,
@@ -387,7 +464,8 @@
   },
   {
     "date": "March 9, 2024",
-    "closed": false,
+    "headliner": "The Bigger Lights",
+    "support": ["littleDEATH", "honeylip"],
     "venue": "St. Andrew's Hall",
     "address": "431 E Congress",
     "city": "Detroit",
@@ -399,6 +477,16 @@
       "name": "Josh Newman",
       "phone": "000-000-0000",
       "email": "josh@booking.com"
+    },
+    "bookingAgent": {
+      "name": "Ford Wesson",
+      "phone": "111-111-1111",
+      "email": "ford@agent.com"
+    },
+    "tourManager": {
+      "name": "Nicole Smith",
+      "phone": "222-222-2222",
+      "email": "nikki@tm.com"
     },
     "doors": "7:30 PM",
     "parking": false,
@@ -442,7 +530,8 @@
   },
   {
     "date": "March 10, 2024",
-    "closed": false,
+    "headliner": "The Bigger Lights",
+    "support": ["littleDEATH", "honeylip"],
     "venue": "House of Bricks",
     "address": "525 E Grand Ave",
     "city": "Des Moines",
@@ -454,6 +543,16 @@
       "name": "Sam Summers",
       "phone": "000-000-0000",
       "email": "sam@booking.com"
+    },
+    "bookingAgent": {
+      "name": "Ford Wesson",
+      "phone": "111-111-1111",
+      "email": "ford@agent.com"
+    },
+    "tourManager": {
+      "name": "Nicole Smith",
+      "phone": "222-222-2222",
+      "email": "nikki@tm.com"
     },
     "doors": "7:00 PM",
     "parking": true,
@@ -497,7 +596,8 @@
   },
   {
     "date": "March 11, 2024",
-    "closed": false,
+    "headliner": "The Bigger Lights",
+    "support": ["littleDEATH", "honeylip"],
     "venue": "Mojoe's Rock House",
     "address": "7537 W 159th St",
     "city": "Tinley Park",
@@ -509,6 +609,16 @@
       "name": "Matt Tribes",
       "phone": "000-000-0000",
       "email": "matt@booking.com"
+    },
+    "bookingAgent": {
+      "name": "Ford Wesson",
+      "phone": "111-111-1111",
+      "email": "ford@agent.com"
+    },
+    "tourManager": {
+      "name": "Nicole Smith",
+      "phone": "222-222-2222",
+      "email": "nikki@tm.com"
     },
     "doors": "6:30 PM",
     "parking": true,
@@ -552,7 +662,8 @@
   },
   {
     "date": "March 12, 2024",
-    "closed": false,
+    "headliner": "The Bigger Lights",
+    "support": ["littleDEATH", "honeylip"],
     "venue": "The Rave",
     "address": "2401 W Wisconsin Ave",
     "city": "Detroit",
@@ -564,6 +675,16 @@
       "name": "Leslie West",
       "phone": "000-000-0000",
       "email": "leslie@booking.com"
+    },
+    "bookingAgent": {
+      "name": "Ford Wesson",
+      "phone": "111-111-1111",
+      "email": "ford@agent.com"
+    },
+    "tourManager": {
+      "name": "Nicole Smith",
+      "phone": "222-222-2222",
+      "email": "nikki@tm.com"
     },
     "doors": "7:30 PM",
     "parking": true,

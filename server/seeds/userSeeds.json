@@ -1,6 +1,5 @@
 [
   {
-    "accountType": "admin",
     "email": "jk@jk.com",
     "password": "password",
     "firstName": "J.K.",
@@ -9,7 +8,6 @@
     "roles": ["Performer", "Guitar Tech", "Merch", "Tour Manager"]
   },
   {
-    "accountType": "user",
     "email": "topher@topher.com",
     "password": "password",
     "firstName": "Topher",
@@ -18,7 +16,6 @@
     "roles": ["Performer", "Merch", "Tour Manager", "Driver"]
   },
   {
-    "accountType": "user",
     "email": "dan@dan.com",
     "password": "password",
     "firstName": "Dan",
@@ -27,7 +24,6 @@
     "roles": ["Performer", "FOH", "Monitors", "Driver"]
   },
   {
-    "accountType": "user",
     "email": "chris@chris.com",
     "password": "password",
     "firstName": "Chris",
@@ -36,7 +32,6 @@
     "roles": ["Performer", "Guitar Tech", "Merch", "Driver"]
   },
   {
-    "accountType": "user",
     "email": "ryan@ryan.com",
     "password": "password",
     "firstName": "Ryan",
@@ -45,7 +40,6 @@
     "roles": ["Performer", "Drum Tech", "Tour Manager", "Merch", "Driver"]
   },
   {
-    "accountType": "user",
     "email": "nicole@nicole.com",
     "password": "password",
     "firstName": "Nicole",
