@@ -33,6 +33,10 @@ const userSchema = new Schema({
     type: String
   },
   roles: [{ type: String }],
+  concerts: [{
+    type: Schema.Types.ObjectId,
+    ref: 'Concert'
+  }]
 });
 
 // Hash password for new accounts and accounts updating password field

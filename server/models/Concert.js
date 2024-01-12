@@ -13,15 +13,33 @@ const timeslotSchema = new Schema({
   },
 });
 
+const contactSchema = new Schema({
+  name: {
+    type: String,
+    trim: true,
+  },
+  phone: {
+    type: String,
+    trim: true,
+  },
+  email: {
+    type: String,
+    trim: true,
+    match: [/.+@.+\..+/, 'Must use a valid email address'],
+  },
+});
+
 const concertSchema = new Schema({
   date: {
     type: Date,
     required: true,
   },
-  closed: {
-    type: Boolean,
-    default: false,
+  headliner: {
+    type: String,
+    required: true,
+    trim: true,
   },
+  support: [{ type: String }],
   venue: {
     type: String,
     required: true,
@@ -52,26 +70,14 @@ const concertSchema = new Schema({
   capacity: {
     type: Number,
   },
-  promoter: {
-    name: { 
-      type: String, 
-      trim: true 
-    },
-    phone: { 
-      type: String, 
-      trim: true 
-    },
-    email: {
-      type: String,
-      trim: true,
-      match: [/.+@.+\..+/, 'Must use a valid email address'],
-    },
-  },
   doors: {
     type: String,
     required: true,
     trim: true,
   },
+  promoter: contactSchema,
+  bookingAgent: contactSchema,
+  tourManager: contactSchema,
   parking: {
     type: Boolean,
   },
@@ -97,6 +103,10 @@ const concertSchema = new Schema({
     type: Boolean,
   },
   daysheet: [timeslotSchema],
+  closed: {
+    type: Boolean,
+    default: false,
+  },
 });
 
 const Concert = model('Concert', concertSchema);
