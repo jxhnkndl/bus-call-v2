@@ -10,7 +10,6 @@ const resolvers = {
   Mutation: {
     login: async (parent, { email, password }) => {
       try {
-        // Find user
         const user = await User.findOne({ email: email })
           .select('-__v')
           .populate({
@@ -25,11 +24,10 @@ const resolvers = {
 
         if (!user) throw AuthenticationError;
 
-        // Check password
         const isValidPw = await user.checkPassword(password);
+        
         if (!isValidPw) throw AuthenticationError;
 
-        // Sign and deliver token and user data
         const token = signToken(user);
 
         return { token, user };
@@ -37,6 +35,17 @@ const resolvers = {
         console.error(err.message);
       }
     },
+    createUser: async (parent, args) => {
+      try {
+        const user = await User.create(args);
+
+        const token = signToken(user);
+
+        return { token, user }
+      } catch (err) {
+        console.error(err);
+      }
+    }
   },
 };
 
