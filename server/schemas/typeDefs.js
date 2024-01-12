@@ -61,11 +61,11 @@ const typeDefs = `
   }
 
   type Query {
-
+    test: String
   }
 
   type Mutation {
-
+    login(email: String!, password: String!): Auth
   }
 `;
 

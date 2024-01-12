@@ -1,65 +1,40 @@
-const { Artist, Concert, User } = require('../models');
+const { Concert, User } = require('../models');
 const { signToken, AuthenticationError } = require('../utils/auth');
 
 const resolvers = {
   Query: {
-    me: async (parent, args, context) => {
-      if (context.user) {
-        try {
-          const me = await User.findOne({ _id: context.user._id })
-            .select('-__v')
-            .populate({
-              path: 'artists',
-              select: '-__v ',
-              populate: [
-                { path: 'concerts', select: '-__v' },
-                { path: 'crew', select: '-__v' },
-              ],
-            });
-
-          return me;
-        } catch (err) {
-          console.log(err);
-        }
-      }
+    test: () => {
+      return 'Hello';
     },
   },
   Mutation: {
-    login: async (parent, { type, email, password }) => {
+    login: async (parent, { email, password }) => {
       try {
-        const user = await User.findOne({ email })
+        // Find user
+        const user = await User.findOne({ email: email })
           .select('-__v')
           .populate({
-            path: 'artists',
-            select: '-__v ',
+            path: 'concerts',
+            select: '-__v',
             populate: [
-              { path: 'concerts', select: '-__v' },
-              { path: 'crew', select: '-__v' },
-            ],
-          });
+              { path: 'promoter' },
+              { path: 'bookingAgent' },
+              { path: 'tourManager' },
+            ]
+          })
 
         if (!user) throw AuthenticationError;
 
+        // Check password
         const isValidPw = await user.checkPassword(password);
-
         if (!isValidPw) throw AuthenticationError;
 
+        // Sign and deliver token and user data
         const token = signToken(user);
 
         return { token, user };
       } catch (err) {
-        console.log(err);
-      }
-    },
-    createUser: async (parent, args) => {
-      try {
-        const user = await User.create(args);
-
-        const token = signToken(user);
-
-        return { token, user };
-      } catch (err) {
-        console.log(err);
+        console.error(err.message);
       }
     },
   },

@@ -43,5 +43,10 @@ const signToken = ({ _id, email }) => {
 
 module.exports = {
   authMiddleware,
-  signToken
+  signToken,
+  AuthenticationError: new GraphQLError('Could not authenticate user.', {
+    extensions: {
+      code: 'UNAUTHENTICATED',
+    },
+  }),
 };
