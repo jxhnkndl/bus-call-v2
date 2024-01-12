@@ -3,8 +3,28 @@ const { signToken, AuthenticationError } = require('../utils/auth');
 
 const resolvers = {
   Query: {
-    test: () => {
-      return 'Hello';
+    me: async (parent, args, context) => {
+      if (context.user) {
+        try {
+          const user = await User.findOne({ _id: context.user._id })
+            .select('-__v')
+            .populate({
+              path: 'concerts',
+              select: '-__v',
+              populate: [
+                { path: 'promoter' },
+                { path: 'bookingAgent' },
+                { path: 'tourManager' },
+              ],
+            });
+
+          if (!user) throw AuthenticationError;
+
+          return user;
+        } catch (err) {
+          console.error(err);
+        }
+      }
     },
   },
   Mutation: {
@@ -19,13 +39,13 @@ const resolvers = {
               { path: 'promoter' },
               { path: 'bookingAgent' },
               { path: 'tourManager' },
-            ]
-          })
+            ],
+          });
 
         if (!user) throw AuthenticationError;
 
         const isValidPw = await user.checkPassword(password);
-        
+
         if (!isValidPw) throw AuthenticationError;
 
         const token = signToken(user);
@@ -41,11 +61,11 @@ const resolvers = {
 
         const token = signToken(user);
 
-        return { token, user }
+        return { token, user };
       } catch (err) {
         console.error(err);
       }
-    }
+    },
   },
 };
 
